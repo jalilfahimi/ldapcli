@@ -57,7 +57,7 @@ node dist/admin/cli/purge_caches.js     // Purges the caches
 node dist/admin/cli/search_advance.js   // Use this to perform an advanced search query
 node dist/admin/cli/search.js           // Use this to perform a search query based on dn or attribute of objects
 ```
-
+![Alt Text](example.gif)
 
 ### DEV Usage
 If you do not have a functional LDAP or want to test this software, you can use the prepared LDAP server from docker.
