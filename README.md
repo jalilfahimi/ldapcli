@@ -105,7 +105,7 @@ sudo docker ps -a
 ```
 Log into an image:
 ```
-sudo docker exec -it $ID /bin/bash/
+sudo docker exec -it $ID /bin/bash
 ```
 
 #### Volumes
