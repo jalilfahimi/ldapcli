@@ -284,7 +284,7 @@ export class LdapClient extends LdapBase {
     async attributeType_exists(attributeType: string): Promise<boolean> {
         try {
             const opts: SearchOptions = { scope: 'base', attributes: ['attributeTypes',] }
-            const records = await this.get_objects_from_context('cn=subschema', opts)
+            const records = await this.get_objects_from_context(this.schema, opts)
 
             const searchStr = `'${attributeType.toLowerCase()}'`
 
@@ -317,7 +317,7 @@ export class LdapClient extends LdapBase {
     async get_attributeType(attributeType: string): Promise<string> {
         try {
             const opts: SearchOptions = { scope: 'base', attributes: ['attributeTypes',] }
-            const records = await this.get_objects_from_context('cn=subschema', opts)
+            const records = await this.get_objects_from_context(this.schema, opts)
 
             const searchStr = `'${attributeType.toLowerCase()}'`
 
@@ -369,7 +369,7 @@ export class LdapClient extends LdapBase {
     async objectclass_exists(objectclass: string): Promise<boolean> {
         try {
             const opts: SearchOptions = { scope: 'base', attributes: ['objectclasses',] }
-            const records = await this.get_objects_from_context('cn=subschema', opts)
+            const records = await this.get_objects_from_context(this.schema, opts)
 
             const searchStr = `'${objectclass.toLowerCase()}'`
 
@@ -402,7 +402,7 @@ export class LdapClient extends LdapBase {
     async get_objectclass(objectclass: string): Promise<string> {
         try {
             const opts: SearchOptions = { scope: 'base', attributes: ['objectclasses',] }
-            const records = await this.get_objects_from_context('cn=subschema', opts)
+            const records = await this.get_objects_from_context(this.schema, opts)
 
             const searchStr = `'${objectclass.toLowerCase()}'`
 
