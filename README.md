@@ -1,5 +1,6 @@
 # ldapcli
-## CLI application to simplify LDAP.
+
+CLI application to simplify LDAP.
 <br>
 
 ## Requirements
