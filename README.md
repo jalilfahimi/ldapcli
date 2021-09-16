@@ -3,7 +3,7 @@
 <br>
 
 ## Requirements
-This software needs node.js and typescript to work properly. If you are using the docker, everything should be fine and you can skip this section.<br />
+This software needs node.js and typescript to work properly. If you are using docker, everything should be fine and you can skip this section.<br />
 If the code is compiled and executed manually (not inside a docker container), make sure to install the following:<br /><br />
 node: 15.4.0 or higher<br />
 npm: 7.0.15 or higher<br />
@@ -59,7 +59,7 @@ node dist/admin/cli/search.js           // Use this to perform a search query ba
 
 
 ### DEV Usage
-If you do not have a functional LDAP or want to test this software, you can use the prepared LDAP server from the docker.
+If you do not have a functional LDAP or want to test this software, you can use the prepared LDAP server from docker.
 #### Start the docker:
 ```
 sudo docker-compose up
@@ -84,9 +84,11 @@ sudo docker-compose down
 ```
 sudo docker-compose down --remove-orphans
 ```
+### Links
+If you are using docker, there is an instance of phpLDAPadmin under http://0.0.0.0:40002 for administrative operations.<br />
+
 ### Passwords
 See the **passwords.passwd** file for the credentials.<br />
-
 
 ### Useful docker commands
 
