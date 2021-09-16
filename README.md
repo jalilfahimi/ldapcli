@@ -38,10 +38,11 @@ git clone https://github.com/thesaintboy/ldapcli.git
 #### Modify the **src/config/ldapconfig.json** to connect to your LDAP-Server.
 **Note:** You need to recompile the code after making changes to this file.<br />
 
-#### Compile the TypeScript:
+#### Install dependencies and compile the TypeScript:
 ```
 cd server
 
+npm install
 npm run build
 ```
 
