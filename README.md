@@ -47,7 +47,7 @@ npm run build
 
 #### After the code is compiled, you can directly start using the following commands:
 ```
-node dist/admin/cli/attributeType.js   // Retrieves the specifications of the requested attributeType
+node dist/admin/cli/attributeType.js    // Retrieves the specifications of the requested attributeType
 node dist/admin/cli/backup.js           // Creates two backup scripts in json and ldif
 node dist/admin/cli/create.js           // Use this to create new objects
 node dist/admin/cli/delete.js           // Use this to delete objects
