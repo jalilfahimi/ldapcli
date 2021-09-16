@@ -40,7 +40,7 @@ git clone https://github.com/thesaintboy/ldapcli.git
 
 #### Compile the TypeScript:
 ```
-cd server:
+cd server
 
 npm run build
 ```
