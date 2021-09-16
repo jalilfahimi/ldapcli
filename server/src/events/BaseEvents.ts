@@ -18,7 +18,7 @@ export abstract class BaseEvents {
      * @param {SearchEntryObject} object 
      * @param {Change[]} changes
      * @returns {void} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async extended(object: SearchEntryObject, changes: Change[]): Promise<void> {
         try {
@@ -32,30 +32,30 @@ export abstract class BaseEvents {
         }
     }
 
-    /**
-     * 
-     * 
-     * @param {string} operand
-     * @param {CRUD} crud 
-     * @param {string} data
-     * @param {string} laststate
-     * @returns {void} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
-     */
-    async log(operand: string, crud: CRUD, data?: string, laststate?: string): Promise<void> {
-        try {
+    // /**
+    //  * 
+    //  * 
+    //  * @param {string} operand
+    //  * @param {CRUD} crud 
+    //  * @param {string} data
+    //  * @param {string} laststate
+    //  * @returns {void} 
+    //  * @author Jalil Fahimi (jalilfahimi535@gmail.com)
+    //  */
+    // async log(operand: string, crud: CRUD, data?: string, laststate?: string): Promise<void> {
+    //     try {
 
-            const record = {
-                operand,
-                crud,
-                data: data ? data : '{}',
-                laststate: laststate ? laststate : '{}',
-                time: Date.now()
-            }
+    //         const record = {
+    //             operand,
+    //             crud,
+    //             data: data ? data : '{}',
+    //             laststate: laststate ? laststate : '{}',
+    //             time: Date.now()
+    //         }
 
-            LOGGER.info(record)
-        } catch (e) {
-            console.log(e)
-        }
-    }
+    //         LOGGER.info(record)
+    //     } catch (e) {
+    //         console.log(e)
+    //     }
+    // }
 }

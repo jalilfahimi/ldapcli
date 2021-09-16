@@ -21,7 +21,7 @@ export class ServerError extends LdapManagerError {
      * @param {SearchEntryObject} operator
      * @param {string} dn
      * @returns {void} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async create_server_error(operator: SearchEntryObject, dn: string): Promise<void> {
         try {

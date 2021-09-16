@@ -19,7 +19,7 @@ export abstract class LdapBase {
      * Performs a bind action against the LDAP server
      *
      * @returns {Client}
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     private connect(): Client {
         return createClient({
@@ -33,7 +33,7 @@ export abstract class LdapBase {
      *
      * @param {Client} client
      * @returns {void}
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     private disconnect(client: Client): void {
         return client.unbind(function (err) {
@@ -51,7 +51,7 @@ export abstract class LdapBase {
      * @param {string} dn
      * @param {string} password
      * @returns {boolean} entries
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     protected async bind(dn: string, password: string): Promise<boolean> {
         const client = this.connect()
@@ -74,7 +74,7 @@ export abstract class LdapBase {
      * @param {string} dn
      * @param {object} entry
      * @returns {string}
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     protected async create_object(dn: string, entry: Record<string, unknown>): Promise<string> {
         const client = this.connect()
@@ -104,7 +104,7 @@ export abstract class LdapBase {
      * @param {string} dn
      * @param {Change} changes
      * @returns {string}
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     protected async update_object(dn: string, changes: Change | Change[]): Promise<string> {
         const client = this.connect()
@@ -134,7 +134,7 @@ export abstract class LdapBase {
      * @param {string} old_dn
      * @param {string} new_dn
      * @returns {string}
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     protected async update_object_dn(old_dn: string, new_dn: string): Promise<string> {
         const client = this.connect()
@@ -163,7 +163,7 @@ export abstract class LdapBase {
      *
      * @param {string} dn
      * @returns {string}
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     protected async delete_object(dn: string): Promise<string> {
         const client = this.connect()
@@ -193,7 +193,7 @@ export abstract class LdapBase {
      * @param {string} context
      * @param {SearchOptions} options
      * @returns {SearchEntryObject[]}
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     protected async get_objects_from_context(context: string, options: SearchOptions): Promise<SearchEntryObject[]> {
         try {

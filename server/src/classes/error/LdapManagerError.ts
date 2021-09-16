@@ -18,7 +18,7 @@ export abstract class LdapManagerError extends Error {
      * Builds an api response.
      * 
      * @returns {{ status: number, error: { type: string, message: string } }}
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     build_api_response(): { status: number, error: { type: string, message: string } } {
         try {
@@ -36,7 +36,7 @@ export abstract class LdapManagerError extends Error {
      * Builds an error
      * 
      * @returns {{ type: string, message: string }}
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     build_error(): { type: string, message: string } {
         try {

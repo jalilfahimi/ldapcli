@@ -21,7 +21,7 @@ export class Cache {
      *
      * @param {string} key
      * @returns {boolean}
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     static async exists(key: string): Promise<boolean> {
         try {
@@ -38,7 +38,7 @@ export class Cache {
      *
      * @param {string} key
      * @returns {string}
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     static async get(key: string): Promise<string> {
         try {
@@ -56,7 +56,7 @@ export class Cache {
      * @param {string} key
      * @param {string} value
      * @returns {void}
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     static async set(key: string, value: string): Promise<void> {
         try {
@@ -73,7 +73,7 @@ export class Cache {
      *
      * @param {string} key
      * @returns {void}
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     static async unset(key: string): Promise<void> {
         try {
@@ -89,7 +89,7 @@ export class Cache {
      * 
      *
      * @returns {void}
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     static async purge(): Promise<void> {
         try {

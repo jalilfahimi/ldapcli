@@ -18,7 +18,7 @@ export class AttributeEvents extends BaseEvents {
      * @param {string} field
      * @param {string} value
      * @returns {void} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async add(object: SearchEntryObject, field: string, value: string): Promise<void> {
         try {
@@ -46,7 +46,7 @@ export class AttributeEvents extends BaseEvents {
      * @param {SearchEntryObject} object 
      * @param {string} field
      * @returns {void} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async delete(object: SearchEntryObject, field: string): Promise<void> {
         try {
@@ -75,7 +75,7 @@ export class AttributeEvents extends BaseEvents {
      * @param {string} field
      * @param {string} value
      * @returns {void} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async replace(object: SearchEntryObject, field: string, value: string): Promise<void> {
         try {

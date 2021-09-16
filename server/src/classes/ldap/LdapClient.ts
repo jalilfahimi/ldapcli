@@ -26,7 +26,7 @@ export class LdapClient extends LdapBase {
      *     
      * @param {string} dn
      * @returns {string} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async get_parent_dn(dn: string): Promise<string> {
         try {
@@ -58,7 +58,7 @@ export class LdapClient extends LdapBase {
      *     
      * @param {string} dn
      * @returns {string} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     get_rdn_from_dn(dn: string): { rdn: string, value: string } {
         try {
@@ -78,7 +78,7 @@ export class LdapClient extends LdapBase {
      * @param {string} dn Distinguished name for the LDAP object 
      * @param {object} entry
      * @returns {string} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async create(dn: string, entry: Record<string, unknown>): Promise<string> {
         try {
@@ -95,7 +95,7 @@ export class LdapClient extends LdapBase {
      * @param {SearchEntryObject} object 
      * @param {Change[]} changes
      * @returns {string[]} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async update(object: SearchEntryObject, changes: Change | Change[]): Promise<string> {
         try {
@@ -112,7 +112,7 @@ export class LdapClient extends LdapBase {
      * @param {SearchEntryObject} object
      * @param {string} new_dn
      * @returns {string} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async update_dn(object: SearchEntryObject, new_dn: string): Promise<string> {
         try {
@@ -128,7 +128,7 @@ export class LdapClient extends LdapBase {
      * 
      * @param {SearchEntryObject} object  
      * @returns {string} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async delete(object: SearchEntryObject): Promise<string> {
         try {
@@ -144,7 +144,7 @@ export class LdapClient extends LdapBase {
      *
      * @param {string} context
      * @returns {SearchEntryObject[]} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async get_everything(context: string): Promise<SearchEntryObject[]> {
         try {
@@ -165,7 +165,7 @@ export class LdapClient extends LdapBase {
      * @param {string} dn
      * @param {string} type
      * @returns {boolean} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async has_direct_children(dn: string, type: string): Promise<boolean> {
         try {
@@ -189,7 +189,7 @@ export class LdapClient extends LdapBase {
      * 
      * @param {string} dn
      * @returns {number}
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async get_depth(dn: string): Promise<number> {
         try {
@@ -216,7 +216,7 @@ export class LdapClient extends LdapBase {
      * @param {[{ field: string, value: string }]} conditions
      * @param {string} context
      * @returns {SearchEntryObject[]} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async get_objects_by_fields(conditions: [{ field: string, value: string }], context: string): Promise<SearchEntryObject[]> {
         try {
@@ -243,7 +243,7 @@ export class LdapClient extends LdapBase {
      * @param {SearchScope} scope
      * @param {string} context
      * @returns {SearchEntryObject[]} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async search_raw(query: string, scope: SearchScope, context: string): Promise<SearchEntryObject[]> {
         try {
@@ -264,7 +264,7 @@ export class LdapClient extends LdapBase {
      *
      * @param {string} password
      * @returns {boolean} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async check_credentials(password: string): Promise<boolean> {
         try {
@@ -279,7 +279,7 @@ export class LdapClient extends LdapBase {
      *
      * @param {string} attributeType
      * @returns {boolean} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async attributeType_exists(attributeType: string): Promise<boolean> {
         try {
@@ -312,7 +312,7 @@ export class LdapClient extends LdapBase {
      *
      * @param {string} attributeType
      * @returns {string} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async get_attributeType(attributeType: string): Promise<string> {
         try {
@@ -347,7 +347,7 @@ export class LdapClient extends LdapBase {
     *
     * @param {string} attributeType
     * @returns {string} 
-    * @author Jalil Fahimi (jfahimi@multamedio.de)
+    * @author Jalil Fahimi (jalilfahimi535@gmail.com)
     */
     async attributeType_is_single_value(attributeType: string): Promise<boolean> {
         try {
@@ -364,7 +364,7 @@ export class LdapClient extends LdapBase {
      *
      * @param {string} objectclass
      * @returns {boolean} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async objectclass_exists(objectclass: string): Promise<boolean> {
         try {
@@ -397,7 +397,7 @@ export class LdapClient extends LdapBase {
      *
      * @param {string} objectclass
      * @returns {string} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async get_objectclass(objectclass: string): Promise<string> {
         try {
@@ -432,7 +432,7 @@ export class LdapClient extends LdapBase {
     *
     * @param {string} objectclass
     * @returns {string} 
-    * @author Jalil Fahimi (jfahimi@multamedio.de)
+    * @author Jalil Fahimi (jalilfahimi535@gmail.com)
     */
     async objectclass_is_structural(objectclass: string): Promise<boolean> {
         try {
@@ -449,7 +449,7 @@ export class LdapClient extends LdapBase {
      *
      * @param {string} objectclass
      * @returns {string[]} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async get_objectclass_parents(objectclass: string): Promise<string[]> {
         try {
@@ -476,7 +476,7 @@ export class LdapClient extends LdapBase {
      * @param {string} objectclass
      * @param {string[]} parents
      * @returns {{required: string[], optional: string[]}} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async get_objectclass_attributes(objectclass: string, parents: string[]): Promise<{ required: string[], optional: string[] }> {
         try {
@@ -505,7 +505,7 @@ export class LdapClient extends LdapBase {
      * @param {string} objectclass
      * @param {string[]} parents_from_last_level
      * @returns {string[]} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     private async calc_objectclass_parents(objectclass: string, parents_from_last_level?: string[]): Promise<string[]> {
         try {
@@ -536,7 +536,7 @@ export class LdapClient extends LdapBase {
      * @param {string} objectclass
      * @param {string[]} parents
      * @returns {{required: string[], optional: string[]}} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     private async calc_objectclass_attributes(objectclass: string, parents: string[]): Promise<{ required: string[], optional: string[] }> {
         try {
@@ -568,7 +568,7 @@ export class LdapClient extends LdapBase {
      *
      * @param {string} objectclass
      * @returns {{required: string[], optional: string[]}} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     private async get_objectclass_direct_attributes(objectclass: string): Promise<{ required: string[], optional: string[] }> {
         try {

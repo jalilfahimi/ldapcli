@@ -18,7 +18,7 @@ export class ObjectEvents extends BaseEvents {
      * @param {string} dn
      * @param {Record<string, unknown>} entry_raw 
      * @returns {void} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async create(dn: string, entry_raw: Record<string, unknown>): Promise<void> {
         try {
@@ -45,7 +45,7 @@ export class ObjectEvents extends BaseEvents {
      * @param {SearchEntryObject} object 
      * @param {string} field
      * @returns {void} 
-     * @author Jalil Fahimi (jfahimi@multamedio.de)
+     * @author Jalil Fahimi (jalilfahimi535@gmail.com)
      */
     async delete(object: SearchEntryObject): Promise<void> {
         try {
