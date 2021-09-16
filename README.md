@@ -2,6 +2,18 @@
 ## CLI application to simplify LDAP.
 <br>
 
+## Requirements
+This software needs node.js and typescript to work properly. If you are using the docker, everything should be fine and you can skip this section.<br />
+If the code is compiled and executed manually (not inside a docker container), make sure to install the following:<br /><br />
+node: 15.4.0 or higher<br />
+npm: 7.0.15 or higher<br />
+tsc (typescript): 3.9.6 <br />
+<br />
+
+Links to install docker and docker-compose:<br />
+[Debian](https://docs.docker.com/engine/install/debian/)<br />
+[Ubuntu](https://docs.docker.com/engine/install/ubuntu/)<br /><br />
+
 ## Installation
 
 Clone the code: 
