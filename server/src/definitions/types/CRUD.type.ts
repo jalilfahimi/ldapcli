@@ -1,0 +1,1 @@
+export type CRUD = 'c' | 'r' | 'u' | 'd'

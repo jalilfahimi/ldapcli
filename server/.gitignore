@@ -1,0 +1,21 @@
+.DS_Store
+/nbproject/
+target
+
+/node_modules/
+/package-lock.json
+dist/*
+/data/tmp/imports/import*
+/data/backups/db/*.sql
+/data/backups/*.json
+/data/backups/*.ldif
+/data/cache/*.json
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

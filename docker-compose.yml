@@ -1,0 +1,38 @@
+version: "3.7"
+
+services:
+  openldap:
+    image: osixia/openldap:1.5.0
+    ports:
+      - "40000:389"
+      - "40001:636"
+    environment:
+      LDAP_ORGANISATION: "local"
+      LDAP_DOMAIN: "example.com"
+      LDAP_BASE_DN: "dc=example,dc=com"
+      LDAP_ADMIN_PASSWORD: "123456"
+      LDAP_TLS: "false"
+
+  # phpLDAPadmin
+  phpldapadmin:
+    image: osixia/phpldapadmin:0.9.0
+    environment:
+      PHPLDAPADMIN_LDAP_HOSTS: "openldap"
+      PHPLDAPADMIN_HTTPS: "false"
+      LDAP_BASE: "dc=example,dc=com"
+      LDAP_ADMIN: "cn=admin,dc=example,dc=com"
+    ports:
+      - "40002:80"
+    depends_on:
+      - openldap
+
+  ## Server
+  server:
+    build:
+      context: ./server
+    image: server:2021050501
+    volumes:
+      - ./server/:/usr/app
+    ports:
+      - "40004:4000"
+    tty: true

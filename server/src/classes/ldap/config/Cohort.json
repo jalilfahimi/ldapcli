@@ -1,0 +1,23 @@
+{
+    "account_types": "(objectclass=posixGroup)",
+    "attributes": [
+        "cn",
+        "description",
+        "dn",
+        "gidNumber",
+        "givenName",
+        "memberUid",
+        "mmCourseCategoryDesc",
+        "mmCourseCategoryName",
+        "mmCourseCategoryCreatedAt",
+        "mmCourseCategoryCreatedBy",
+        "mmCourseCategoryLastEditedAt",
+        "mmCourseCategoryLastEditedBy"
+    ],
+    "object_classes": [
+        "mmCourseGroups",
+        "posixGroup",
+        "top"
+    ],
+    "RDN": "cn"
+}
